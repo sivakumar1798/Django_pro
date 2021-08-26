@@ -1,0 +1,47 @@
+{% load  static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login form</title>
+
+
+<link rel="stylesheet" type="text/css" href= "{% static 'css/style1.css' %}">
+
+</head>
+<body>
+<div id ="container">
+<form action="{% url 'Insertrecord' %}" method="POST">
+    {% csrf_token %}
+    <lable for ="name">Name</lable><br>
+    <input type="text" id="name" name="name" size="50" required><br><br>
+    <lable for ="Email">Email</lable><br>
+    <input type="mail" id ="mail" name="Email" size="50" required><br><br>
+    <lable for= "phone">phone no</lable><br>
+    <input type="tel" id="phone" name="phone" size="50" required><br><br>
+
+    <lable for ="name">Address</lable><br>
+    <input type="text" id="address" name="address" size="50" required><br><br>
+    <lable for="password">Password</lable><br>
+    <input type="password" id="pws" name="pws" size="50" required><br><br>
+    <label for ="password">confirm password</lable><br>
+    <input type="password" id="pws" name="confirmpws" size="50" required><br><br>
+    <input type="submit" value="insert Record" >
+    {% if messages %}
+    {% for message in messages %}
+    <h2 style="color:green">{{message}}</h2>
+    {% endfor %}
+    {% endif %}
+</form>
+        
+       
+
+
+
+<div id="footer">
+</div>
+
+</div>
+</body>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'myapp/base.html' %}
+{% block content %}
+<h1>student Details</h1>
+<table>
+    <thead>
+        <th>User_name</th>
+        <th>phone</th>
+        <th>email</th>
+        <th>Address</th>
+        <th>password</th>
+        <th>confirn_password</th>
+    
+    </thead>
+    <tr>
+    {% for st in student %}
+    <td>{{st.user_name}}</td>
+    <td>{{st.phone}}</td>
+    <td>{{st.email}}</td>
+    <td>{{st.password}}</td>
+    <td>{{st.confirm_password}}</td>
+    </tr>
+    {% endfor %}
+    
+    {% endblock %}
+</table>
+
+        
+</html>

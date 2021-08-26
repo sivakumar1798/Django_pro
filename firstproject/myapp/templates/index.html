@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" type=text/css href= "{% static 'css/style.css' %}">
+</head>
+<body>
+    <!-- <div id="topbar"> -->
+
+    <!-- </div> -->
+
+    <div id="header">
+        <img src="{% static 'myapp/image/download.png'%}"/>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Contact</a></li>
+
+
+           <div class="navbar">
+            <div class="dropdown">
+                    <li><button class="dropbtn">login
+                  <div class="dropdown-content">
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'signup' %}">Sign up</a>
+                    <a href="{% url 'show' %}">logout</a>
+                </button></li>
+                  </div>
+                </div> 
+              </div>
+           </ul>
+         
+
+        </div>
+    <div id="container">
+
+        
+            <div id="banner">
+                <img src="{% static 'myshow/image/rem1.jpg' %}" >
+            </div>
+            <div id="content1">
+                <h4 class="heading">Welcome !</h4>
+                <p class="para1">This is first paragraph for this website. this we have lat of information.This is first paragraph for this website. this we have lat of information.
+                    This is first paragraph for this website. this we have lat of information.
+                </p>
+                <a href="#" class="more">Read More...</a>
+                
+            </div>
+                
+            <div id="content2">
+                <h4 class="heading">Our Services !</h4>
+                <p class="para1">This is first paragraph for this website. this we have lat of information.This is first paragraph for this website. this we have lat of information.
+                    This is first paragraph for this website. this we have lat of information.
+                </p>
+                <a href="#" class="more">Read More...</a>
+            </div>
+            
+            <div id="content3">
+                <h4 class="heading">About Us !</h4>
+                <p class="para1">This is first paragraph for this website. this we have lat of information.This is first paragraph for this website. this we have lat of information.
+                    This is first paragraph for this website. this we have lat of information.
+                </p>
+                <a href="#" class="more">Read More....</a>
+            
+            </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <div id="bottom2">
+                <h2>Process</h2>
+                <p >This is first paragraph for this website.<b> this we have lat of information</b>.This is first paragraph for this website. this we have lat of information.
+                    This is first paragraph for this website. this we have lat of information.
+                </p><br>
+
+                <h2>Conection</h2>
+                <p >This is first paragraph for this website.<b> this we have lat of information</b>.This is first paragraph for this website. this we have lat of information.
+                    This is first paragraph for this website. this we have lat of information.
+                </p>
+                <a href="#">Read more</a>
+
+
+            </div>
+            <div id="bottom3">
+                <h2>About Us </h2>
+                <p >This is first paragraph for this website.<b> this we have lat of information</b>.This is first paragraph for this website. this we have lat of information.
+                    
+                </p>
+                <img src="{% static 'myshow/image/rem2.jpg' %}" />
+
+            </div>
+
+                
+
+               
+        </div>
+        <div id="footer">
+
+        </div>
+
+    
+
+</body>
+</html>
